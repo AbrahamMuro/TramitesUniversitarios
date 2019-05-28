@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xTa-l7-M4P">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Actividad Investigacion-->
+        <scene sceneID="HCu-UG-AUU">
+            <objects>
+                <viewController id="rqN-8H-dn3" customClass="actividadInvestigacion" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lcg-J9-eH2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8H-9y-lSU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B8H-9y-lSU" firstAttribute="leading" secondItem="KhO-y7-eQZ" secondAttribute="leading" id="CRn-HB-hod"/>
+                            <constraint firstItem="B8H-9y-lSU" firstAttribute="top" secondItem="Lcg-J9-eH2" secondAttribute="top" id="Ru7-rt-Oyu"/>
+                            <constraint firstItem="B8H-9y-lSU" firstAttribute="bottom" secondItem="KhO-y7-eQZ" secondAttribute="bottom" id="bsd-sn-88S"/>
+                            <constraint firstItem="B8H-9y-lSU" firstAttribute="trailing" secondItem="KhO-y7-eQZ" secondAttribute="trailing" id="vKf-T6-cLh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KhO-y7-eQZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="actividadWeb" destination="B8H-9y-lSU" id="dcg-3N-lhs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVV-rq-l5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.60000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1sg-5e-Xwx">
+                                <rect key="frame" x="0.0" y="16" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5bC-PD-SaC">
+                                <rect key="frame" x="1" y="419.66666666666669" width="412" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP2-l4-9Ll">
+                                        <rect key="frame" x="26" y="0.0" width="360" height="41"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="29"/>
+                                        <state key="normal" title="Egresados Opc. Titulación">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.80460362346625769" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSelection2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESs-dR-oGb"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS7-6G-vyW">
+                                        <rect key="frame" x="76.666666666666686" y="0.0" width="259" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Actividad de Investigación">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.80460362350000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="egresadoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bCC-mH-gIR"/>
+                                            <segue destination="rqN-8H-dn3" kind="show" id="kt6-xh-fZ2"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86T-du-qt5">
+                                        <rect key="frame" x="104.66666666666669" y="0.0" width="203" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Apoyo a la Docencia">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.80460362350000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="egresadoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jga-o4-emK"/>
+                                            <segue destination="U7K-66-dHb" kind="show" id="hAh-jB-3dv"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVf-sV-A4f">
+                                        <rect key="frame" x="97.666666666666686" y="0.0" width="217" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Estudios en Posgrado">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.80460362350000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="egresadoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7H-sg-Xwm"/>
+                                            <segue destination="qh4-yB-zDZ" kind="show" id="uAj-d4-bFu"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ob-TY-zhQ">
+                                        <rect key="frame" x="27" y="0.0" width="358" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Exámen General de Conociemientos">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.80460362350000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="egresadoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6x-BD-wgn"/>
+                                            <segue destination="VWn-G7-o5s" kind="show" id="5Ui-Wx-Uyd"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7d-10-ssT">
+                                        <rect key="frame" x="110" y="0.0" width="192" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Trabajo Profesional">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="0.80460362350000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="egresadoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5G8-yy-ROq"/>
+                                            <segue destination="eE7-cK-0qe" kind="show" id="fB2-Xy-UTI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trámites Universitarios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuh-bd-zp5">
+                                <rect key="frame" x="0.0" y="202" width="414" height="36.666666666666657"/>
+                                <color key="backgroundColor" red="0.82811463859416445" green="0.71372904083516553" blue="0.44600004198995569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.98291227000000003" green="0.92063310330000003" blue="0.074600860000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="shadowColor" red="0.98291227000000003" green="0.92063310330000003" blue="0.074600860000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NLQ-nK-zfn">
+                                <rect key="frame" x="1" y="278.66666666666669" width="412" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EJ-Hx-19T">
+                                        <rect key="frame" x="145.66666666666666" y="0.0" width="120.99999999999997" height="41"/>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="29"/>
+                                        <state key="normal" title="Alumnos">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWl-oU-afN"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfw-8X-gXd">
+                                        <rect key="frame" x="101.66666666666669" y="0.0" width="209" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Cambio de Carrera">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ck-ou-Sjn"/>
+                                            <segue destination="cZ6-5D-OE3" kind="show" id="Lnv-l7-H5d"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-aN-0md">
+                                        <rect key="frame" x="59.666666666666657" y="0.0" width="293" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Cambio Interno de Carrera">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJQ-il-Jf2"/>
+                                            <segue destination="bkC-M4-1NW" kind="show" id="0SP-Zx-vUs"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5H-Sm-3nE">
+                                        <rect key="frame" x="107" y="0.0" width="198" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Cambio de Plantel">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ChQ-cn-OFd"/>
+                                            <segue destination="Q9y-SD-ObZ" kind="show" id="noq-rW-1BI"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-ad-rVQ">
+                                        <rect key="frame" x="100.66666666666669" y="0.0" width="211" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Carrera Simultanea">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hbB-DS-96y"/>
+                                            <segue destination="RAH-D8-WYt" kind="show" id="rbg-TZ-aoi"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKk-hx-exf">
+                                        <rect key="frame" x="78.666666666666686" y="0.0" width="255" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Certificado de Estudios">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wEt-Th-1wv"/>
+                                            <segue destination="djg-p4-oOj" kind="show" id="xGU-fr-uSY"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-3y-wa1">
+                                        <rect key="frame" x="78" y="0.0" width="256" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Constancia de Créditos">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ok5-xu-KSq"/>
+                                            <segue destination="Ep4-8I-8na" kind="show" id="uie-l8-F5k"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxj-PJ-Csc">
+                                        <rect key="frame" x="77.666666666666686" y="0.0" width="257" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Constancia de Estudios">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZSh-sk-Zc7"/>
+                                            <segue destination="YSc-Yi-r7K" kind="show" id="HyF-F9-xt8"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5a-fD-htp">
+                                        <rect key="frame" x="58.666666666666657" y="0.0" width="295" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Reposicición de Credencial">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="plV-lV-Jvq"/>
+                                            <segue destination="HSe-8B-R32" kind="show" id="l0p-zT-pbs"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k89-7d-LTO">
+                                        <rect key="frame" x="112.66666666666669" y="0.0" width="187" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Segunda Carrera">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fH6-8U-aYC"/>
+                                            <segue destination="dxL-fm-vuw" kind="show" id="pZy-xq-SA3"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de0-UX-Avm">
+                                        <rect key="frame" x="89" y="0.0" width="234" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
+                                        <state key="normal" title="Suspensión Temporal">
+                                            <color key="titleColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="alumnoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcz-NL-h1d"/>
+                                            <segue destination="qh6-Mr-fnA" kind="show" id="7DH-T4-36v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UNAM.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NON-uy-h2G">
+                                <rect key="frame" x="0.0" y="64" width="414" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npH-SY-iPC">
+                                <rect key="frame" x="315" y="668" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.73103862732095493" green="0.63006191893552876" blue="0.39371754016439992" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Cultura UNAM"/>
+                                <connections>
+                                    <segue destination="M7T-Z3-aGf" kind="show" id="Dfc-A4-Sb4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lines.png" translatesAutoresizingMaskIntoConstraints="NO" id="I81-bU-m5V">
+                                <rect key="frame" x="-205" y="512" width="824" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5bC-PD-SaC" firstAttribute="top" secondItem="NLQ-nK-zfn" secondAttribute="bottom" constant="100" id="37X-sO-RbA"/>
+                            <constraint firstItem="NLQ-nK-zfn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="ADR-RX-gma"/>
+                            <constraint firstItem="5bC-PD-SaC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="D6P-Ir-Jkc"/>
+                            <constraint firstItem="NLQ-nK-zfn" firstAttribute="top" secondItem="Iuh-bd-zp5" secondAttribute="bottom" constant="40" id="EUn-cT-87q"/>
+                            <constraint firstItem="Iuh-bd-zp5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="NZs-El-aJJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5bC-PD-SaC" secondAttribute="trailing" constant="1" id="Ova-nc-wRm"/>
+                            <constraint firstItem="5bC-PD-SaC" firstAttribute="top" secondItem="NLQ-nK-zfn" secondAttribute="bottom" constant="100" id="Yng-4b-T34"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NLQ-nK-zfn" secondAttribute="trailing" constant="1" id="leU-td-wW8"/>
+                            <constraint firstItem="Iuh-bd-zp5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r9K-QD-Jly"/>
+                            <constraint firstItem="Iuh-bd-zp5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wvu-Z2-0g4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vMm-hV-id8">
+                        <barButtonItem key="leftBarButtonItem" title="Desarrolladores" id="fkh-4J-9Sf">
+                            <connections>
+                                <segue destination="EiY-uL-ec3" kind="show" id="kCU-0K-z7Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outletCollection property="alumnoTramite" destination="zfw-8X-gXd" collectionClass="NSMutableArray" id="Bc8-e3-a9e"/>
+                        <outletCollection property="alumnoTramite" destination="ccD-aN-0md" collectionClass="NSMutableArray" id="bcI-Na-Zb9"/>
+                        <outletCollection property="alumnoTramite" destination="N5H-Sm-3nE" collectionClass="NSMutableArray" id="jEq-FP-ZG3"/>
+                        <outletCollection property="alumnoTramite" destination="9Pe-ad-rVQ" collectionClass="NSMutableArray" id="acz-nt-cap"/>
+                        <outletCollection property="alumnoTramite" destination="CKk-hx-exf" collectionClass="NSMutableArray" id="PWA-5d-8VK"/>
+                        <outletCollection property="alumnoTramite" destination="nyI-3y-wa1" collectionClass="NSMutableArray" id="CPH-Pl-ShL"/>
+                        <outletCollection property="alumnoTramite" destination="cxj-PJ-Csc" collectionClass="NSMutableArray" id="OeD-K7-JSW"/>
+                        <outletCollection property="alumnoTramite" destination="Q5a-fD-htp" collectionClass="NSMutableArray" id="U6N-lS-aqW"/>
+                        <outletCollection property="alumnoTramite" destination="k89-7d-LTO" collectionClass="NSMutableArray" id="Kd8-fP-O2R"/>
+                        <outletCollection property="alumnoTramite" destination="de0-UX-Avm" collectionClass="NSMutableArray" id="OKe-fK-N3q"/>
+                        <outletCollection property="egresadoTramite" destination="PS7-6G-vyW" collectionClass="NSMutableArray" id="Qge-C0-dgt"/>
+                        <outletCollection property="egresadoTramite" destination="86T-du-qt5" collectionClass="NSMutableArray" id="bX5-Uo-XQo"/>
+                        <outletCollection property="egresadoTramite" destination="LVf-sV-A4f" collectionClass="NSMutableArray" id="7CF-XN-uni"/>
+                        <outletCollection property="egresadoTramite" destination="7Ob-TY-zhQ" collectionClass="NSMutableArray" id="8vf-vd-wF6"/>
+                        <outletCollection property="egresadoTramite" destination="X7d-10-ssT" collectionClass="NSMutableArray" id="25K-8e-0mU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075.3623188405797" y="131.25"/>
+        </scene>
+        <!--Cambio Carrera-->
+        <scene sceneID="MyL-fj-Vv6">
+            <objects>
+                <viewController id="cZ6-5D-OE3" customClass="cambioCarrera" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPW-DE-kDc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCI-C6-1M7">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kCI-C6-1M7" firstAttribute="top" secondItem="BSy-W0-4rw" secondAttribute="top" id="399-lP-Jor"/>
+                            <constraint firstItem="kCI-C6-1M7" firstAttribute="trailing" secondItem="BSy-W0-4rw" secondAttribute="trailing" id="3RZ-Ax-EcT"/>
+                            <constraint firstItem="BSy-W0-4rw" firstAttribute="trailing" secondItem="kCI-C6-1M7" secondAttribute="trailing" id="QX8-bU-IYb"/>
+                            <constraint firstAttribute="bottom" secondItem="kCI-C6-1M7" secondAttribute="bottom" id="RrQ-QW-JcF"/>
+                            <constraint firstItem="kCI-C6-1M7" firstAttribute="top" secondItem="BSy-W0-4rw" secondAttribute="top" id="ati-Fj-Piw"/>
+                            <constraint firstItem="kCI-C6-1M7" firstAttribute="leading" secondItem="BSy-W0-4rw" secondAttribute="leading" id="cOa-zr-pbj"/>
+                            <constraint firstAttribute="bottom" secondItem="kCI-C6-1M7" secondAttribute="bottom" id="d7j-Qe-NmF"/>
+                            <constraint firstItem="kCI-C6-1M7" firstAttribute="leading" secondItem="BSy-W0-4rw" secondAttribute="leading" id="pZg-Rl-XZE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BSy-W0-4rw"/>
+                    </view>
+                    <connections>
+                        <outlet property="cambioCarrera" destination="kCI-C6-1M7" id="B99-It-1Ep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vd-MV-33H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.8" y="132.68365817091455"/>
+        </scene>
+        <!--Cambio Interno-->
+        <scene sceneID="AXB-SV-iY3">
+            <objects>
+                <viewController id="bkC-M4-1NW" customClass="cambioInterno" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uaW-Sb-Gsh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XN-H0-8dE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AsK-h0-L67" firstAttribute="trailing" secondItem="2XN-H0-8dE" secondAttribute="trailing" id="6bO-3l-2KC"/>
+                            <constraint firstItem="2XN-H0-8dE" firstAttribute="leading" secondItem="AsK-h0-L67" secondAttribute="leading" id="Bkg-Za-rhW"/>
+                            <constraint firstItem="AsK-h0-L67" firstAttribute="bottom" secondItem="2XN-H0-8dE" secondAttribute="bottom" id="Jo1-NC-PQz"/>
+                            <constraint firstItem="2XN-H0-8dE" firstAttribute="top" secondItem="uaW-Sb-Gsh" secondAttribute="top" id="uB2-Wk-63N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AsK-h0-L67"/>
+                    </view>
+                    <connections>
+                        <outlet property="cambioInterno" destination="2XN-H0-8dE" id="7Bu-TF-DXc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4WL-LJ-e5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2479.1999999999998" y="132.68365817091455"/>
+        </scene>
+        <!--Cambio Plantel-->
+        <scene sceneID="Gfx-ke-oHY">
+            <objects>
+                <viewController id="Q9y-SD-ObZ" customClass="cambioPlantel" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mZx-Si-8T7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYS-M5-nUF">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cgL-Tl-PKi" firstAttribute="bottom" secondItem="GYS-M5-nUF" secondAttribute="bottom" id="6yF-zn-6OA"/>
+                            <constraint firstItem="GYS-M5-nUF" firstAttribute="top" secondItem="cgL-Tl-PKi" secondAttribute="top" id="Jwf-ex-Aek"/>
+                            <constraint firstItem="cgL-Tl-PKi" firstAttribute="trailing" secondItem="GYS-M5-nUF" secondAttribute="trailing" id="kEl-wO-uoy"/>
+                            <constraint firstItem="GYS-M5-nUF" firstAttribute="leading" secondItem="cgL-Tl-PKi" secondAttribute="leading" id="odY-yw-2ki"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cgL-Tl-PKi"/>
+                    </view>
+                    <connections>
+                        <outlet property="cambioPlantel" destination="GYS-M5-nUF" id="kBO-sQ-fbM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEA-jv-Zk2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3172" y="132.68365817091455"/>
+        </scene>
+        <!--Carrera Simultanea-->
+        <scene sceneID="c5v-as-KtG">
+            <objects>
+                <viewController id="RAH-D8-WYt" customClass="carreraSimultanea" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xXa-Gj-c8a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4C6-Nj-Cfm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4C6-Nj-Cfm" firstAttribute="leading" secondItem="8nA-Ed-yRt" secondAttribute="leading" id="DQd-gD-RKK"/>
+                            <constraint firstItem="4C6-Nj-Cfm" firstAttribute="top" secondItem="xXa-Gj-c8a" secondAttribute="top" id="Kfv-W3-lQE"/>
+                            <constraint firstItem="8nA-Ed-yRt" firstAttribute="trailing" secondItem="4C6-Nj-Cfm" secondAttribute="trailing" id="Wg5-7j-urz"/>
+                            <constraint firstItem="8nA-Ed-yRt" firstAttribute="bottom" secondItem="4C6-Nj-Cfm" secondAttribute="bottom" id="nso-q1-gt4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8nA-Ed-yRt"/>
+                    </view>
+                    <connections>
+                        <outlet property="simultaneaWeb" destination="4C6-Nj-Cfm" id="lqr-sh-gag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAa-jc-QwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3860" y="132.68365817091455"/>
+        </scene>
+        <!--Certificado Estudios-->
+        <scene sceneID="DhG-nq-5Cr">
+            <objects>
+                <viewController id="djg-p4-oOj" customClass="certificadoEstudios" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hvd-wj-Eo3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrb-tK-d6X">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lrb-tK-d6X" firstAttribute="top" secondItem="0RI-9q-FWm" secondAttribute="top" id="I5U-g0-2bm"/>
+                            <constraint firstItem="0RI-9q-FWm" firstAttribute="bottom" secondItem="lrb-tK-d6X" secondAttribute="bottom" id="Wqr-ab-5SJ"/>
+                            <constraint firstItem="0RI-9q-FWm" firstAttribute="trailing" secondItem="lrb-tK-d6X" secondAttribute="trailing" id="c19-6E-28b"/>
+                            <constraint firstItem="lrb-tK-d6X" firstAttribute="leading" secondItem="0RI-9q-FWm" secondAttribute="leading" id="tK4-9t-OJD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0RI-9q-FWm"/>
+                    </view>
+                    <connections>
+                        <outlet property="certificadoEweb" destination="lrb-tK-d6X" id="JIt-7j-5WY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08H-8o-ef1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4589.6000000000004" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nCC-1O-FVp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xTa-l7-M4P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mz4-Z0-DJw">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QMH-tP-fk1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jue-on-jBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-562"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qa1-Tc-55P">
+            <objects>
+                <viewController id="M7T-Z3-aGf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5FH-qG-j7a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="20z-ri-a1i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="culturaUNAM.png" translatesAutoresizingMaskIntoConstraints="NO" id="dl9-qW-f1H">
+                                <rect key="frame" x="93" y="720" width="321" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cultura.png" translatesAutoresizingMaskIntoConstraints="NO" id="iA7-5i-kGM">
+                                <rect key="frame" x="0.0" y="85" width="414" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7L6-Bm-e5P">
+                                <rect key="frame" x="38" y="278" width="348" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
+                                <state key="normal" title="Cartelera FES Acatlán">
+                                    <color key="titleColor" red="0.85550731420516968" green="0.74865812063217163" blue="0.071977965533733368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vbJ-G6-HGb" kind="show" id="Gu6-JB-ZVw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIw-WM-Xdw">
+                                <rect key="frame" x="78" y="388" width="269" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
+                                <state key="normal" title="Festivales UNAM ">
+                                    <color key="titleColor" red="0.85550731420516968" green="0.74865812063217163" blue="0.071977965533733368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ynD-3P-ZB1" kind="show" id="qgi-hn-H4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnK-5I-8LZ">
+                                <rect key="frame" x="0.0" y="674" width="157" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.73103862730000002" green="0.63006191889999996" blue="0.39371754019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Trámites Universitarios"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FuF-o0-ObU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4h-I5-BU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031.8840579710147" y="-563.16964285714278"/>
+        </scene>
+        <!--Cartelera-->
+        <scene sceneID="y8j-DW-V1p">
+            <objects>
+                <viewController id="vbJ-G6-HGb" customClass="cartelera" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eOv-lz-X70">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3OT-bH-a1u">
+                                <rect key="frame" x="0.0" y="79" width="414" height="783"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3OT-bH-a1u" firstAttribute="trailing" secondItem="ojI-c4-x49" secondAttribute="trailing" id="fa8-QM-4PP"/>
+                            <constraint firstItem="3OT-bH-a1u" firstAttribute="top" secondItem="ojI-c4-x49" secondAttribute="top" id="fck-ep-gmx"/>
+                            <constraint firstItem="3OT-bH-a1u" firstAttribute="leading" secondItem="ojI-c4-x49" secondAttribute="leading" id="leJ-YD-D2K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ojI-c4-x49"/>
+                    </view>
+                    <connections>
+                        <outlet property="carteleraWeb" destination="3OT-bH-a1u" id="fGY-2N-IFc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RW3-Of-cRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2776.811594202899" y="-563.16964285714278"/>
+        </scene>
+        <!--Constancia Estudios-->
+        <scene sceneID="XhG-fg-VUt">
+            <objects>
+                <viewController id="YSc-Yi-r7K" customClass="constanciaEstudios" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VdU-Py-pwn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2W-zp-4sc">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z2W-zp-4sc" firstAttribute="leading" secondItem="XUO-eu-hlq" secondAttribute="leading" id="BWJ-xE-yWT"/>
+                            <constraint firstItem="z2W-zp-4sc" firstAttribute="top" secondItem="XUO-eu-hlq" secondAttribute="top" id="HA5-hc-6B6"/>
+                            <constraint firstItem="XUO-eu-hlq" firstAttribute="trailing" secondItem="z2W-zp-4sc" secondAttribute="trailing" id="gVs-97-lv1"/>
+                            <constraint firstItem="XUO-eu-hlq" firstAttribute="bottom" secondItem="z2W-zp-4sc" secondAttribute="bottom" id="mde-kM-8qW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XUO-eu-hlq"/>
+                    </view>
+                    <connections>
+                        <outlet property="constanciaEweb" destination="z2W-zp-4sc" id="r6v-Z3-6Xd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vvu-3d-21V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4589.6000000000004" y="858.62068965517244"/>
+        </scene>
+        <!--Constancia Creditos-->
+        <scene sceneID="CPM-d3-dtN">
+            <objects>
+                <viewController id="Ep4-8I-8na" customClass="constanciaCreditos" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LbG-P6-J2y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dh-0U-ltQ">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="464-Vj-PeX" firstAttribute="trailing" secondItem="7dh-0U-ltQ" secondAttribute="trailing" id="ClW-jb-wha"/>
+                            <constraint firstItem="7dh-0U-ltQ" firstAttribute="leading" secondItem="464-Vj-PeX" secondAttribute="leading" id="IIV-Z8-sJ9"/>
+                            <constraint firstItem="464-Vj-PeX" firstAttribute="bottom" secondItem="7dh-0U-ltQ" secondAttribute="bottom" id="XmE-Ft-vLH"/>
+                            <constraint firstItem="7dh-0U-ltQ" firstAttribute="top" secondItem="464-Vj-PeX" secondAttribute="top" id="qga-Vq-BlX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="464-Vj-PeX"/>
+                    </view>
+                    <connections>
+                        <outlet property="constanciaCweb" destination="7dh-0U-ltQ" id="bUD-9J-Nlv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3BN-gE-JAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3860" y="858.62068965517244"/>
+        </scene>
+        <!--Reposicion Credencial-->
+        <scene sceneID="tiR-x5-Fbf">
+            <objects>
+                <viewController id="HSe-8B-R32" customClass="reposicionCredencial" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x9i-9C-jPE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VD5-4m-M2v">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l1q-9f-pgP" firstAttribute="bottom" secondItem="VD5-4m-M2v" secondAttribute="bottom" id="Dyo-9x-ApT"/>
+                            <constraint firstItem="VD5-4m-M2v" firstAttribute="leading" secondItem="l1q-9f-pgP" secondAttribute="leading" id="TK1-55-0Zh"/>
+                            <constraint firstItem="l1q-9f-pgP" firstAttribute="trailing" secondItem="VD5-4m-M2v" secondAttribute="trailing" id="g3c-Xr-PIT"/>
+                            <constraint firstItem="VD5-4m-M2v" firstAttribute="top" secondItem="l1q-9f-pgP" secondAttribute="top" id="mvC-0K-sdY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l1q-9f-pgP"/>
+                    </view>
+                    <connections>
+                        <outlet property="credencialWeb" destination="VD5-4m-M2v" id="eIJ-aI-nZ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lK-Uf-U2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3172" y="858.62068965517244"/>
+        </scene>
+        <!--Segunda Carrerra-->
+        <scene sceneID="ndb-cO-q7e">
+            <objects>
+                <viewController id="dxL-fm-vuw" customClass="segundaCarrerra" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5XX-6k-ik8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-7Q-ToF">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="43j-JF-BmA" firstAttribute="trailing" secondItem="n7f-7Q-ToF" secondAttribute="trailing" id="6sI-xg-EWm"/>
+                            <constraint firstItem="n7f-7Q-ToF" firstAttribute="leading" secondItem="43j-JF-BmA" secondAttribute="leading" id="HnK-RS-gmn"/>
+                            <constraint firstItem="43j-JF-BmA" firstAttribute="bottom" secondItem="n7f-7Q-ToF" secondAttribute="bottom" id="Unu-Y0-ngj"/>
+                            <constraint firstItem="n7f-7Q-ToF" firstAttribute="top" secondItem="43j-JF-BmA" secondAttribute="top" id="v2L-Me-W9E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="43j-JF-BmA"/>
+                    </view>
+                    <connections>
+                        <outlet property="segundaCweb" destination="n7f-7Q-ToF" id="l02-bW-mJ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zzm-kZ-7b4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477.5999999999999" y="858.62068965517244"/>
+        </scene>
+        <!--Suspencion Temporal-->
+        <scene sceneID="ggs-IZ-LZx">
+            <objects>
+                <viewController id="qh6-Mr-fnA" customClass="suspencionTemporal" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ji-1O-ot0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FF-A5-tsd">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sjE-Il-BAV" firstAttribute="bottom" secondItem="4FF-A5-tsd" secondAttribute="bottom" id="Lnk-9k-zqS"/>
+                            <constraint firstItem="4FF-A5-tsd" firstAttribute="leading" secondItem="sjE-Il-BAV" secondAttribute="leading" id="S2r-bZ-NIY"/>
+                            <constraint firstItem="4FF-A5-tsd" firstAttribute="top" secondItem="sjE-Il-BAV" secondAttribute="top" id="kzY-TI-jqU"/>
+                            <constraint firstItem="sjE-Il-BAV" firstAttribute="trailing" secondItem="4FF-A5-tsd" secondAttribute="trailing" id="lSX-2p-0Nr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sjE-Il-BAV"/>
+                    </view>
+                    <connections>
+                        <outlet property="suspencionTweb" destination="4FF-A5-tsd" id="zmN-gY-L9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLV-DQ-MU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.8" y="858.62068965517244"/>
+        </scene>
+        <!--Apoyo Docencia-->
+        <scene sceneID="B0r-yo-X5V">
+            <objects>
+                <viewController id="U7K-66-dHb" customClass="apoyoDocencia" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DnF-X0-vXb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EK9-e1-lQW">
+                                <rect key="frame" x="88" y="-83" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8R-mE-LAu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w8R-mE-LAu" firstAttribute="bottom" secondItem="Ybn-aR-Oxd" secondAttribute="bottom" id="1PU-Ub-Eky"/>
+                            <constraint firstItem="w8R-mE-LAu" firstAttribute="top" secondItem="DnF-X0-vXb" secondAttribute="top" id="A5g-VQ-FMs"/>
+                            <constraint firstItem="w8R-mE-LAu" firstAttribute="leading" secondItem="Ybn-aR-Oxd" secondAttribute="leading" id="EcZ-k9-1ux"/>
+                            <constraint firstItem="w8R-mE-LAu" firstAttribute="trailing" secondItem="Ybn-aR-Oxd" secondAttribute="trailing" id="UNa-fj-hOL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ybn-aR-Oxd"/>
+                    </view>
+                    <connections>
+                        <outlet property="docenciaWeb" destination="w8R-mE-LAu" id="RJL-yd-ZpQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZf-cg-WZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-399.19999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Estudios Posgrado-->
+        <scene sceneID="aWC-6d-giz">
+            <objects>
+                <viewController id="qh4-yB-zDZ" customClass="estudiosPosgrado" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="upN-Nt-bim">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="682-AR-NGd">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="682-AR-NGd" firstAttribute="top" secondItem="rsO-0L-FgF" secondAttribute="top" id="4f7-xJ-IWg"/>
+                            <constraint firstItem="682-AR-NGd" firstAttribute="trailing" secondItem="rsO-0L-FgF" secondAttribute="trailing" id="HdI-Mt-a9U"/>
+                            <constraint firstItem="682-AR-NGd" firstAttribute="leading" secondItem="rsO-0L-FgF" secondAttribute="leading" id="nkO-H2-dWz"/>
+                            <constraint firstItem="682-AR-NGd" firstAttribute="bottom" secondItem="rsO-0L-FgF" secondAttribute="bottom" id="rrI-kw-kA5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rsO-0L-FgF"/>
+                    </view>
+                    <connections>
+                        <outlet property="posgradoWeb" destination="682-AR-NGd" id="AN8-2D-HPB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Idp-M9-ft9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1130.4000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Trabajo Profesional-->
+        <scene sceneID="hKN-sd-2do">
+            <objects>
+                <viewController id="eE7-cK-0qe" customClass="trabajoProfesional" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NCn-lQ-c7D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qJ-W8-aje">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4qJ-W8-aje" firstAttribute="bottom" secondItem="rXt-K7-AQj" secondAttribute="bottom" id="HVp-rZ-NXq"/>
+                            <constraint firstItem="4qJ-W8-aje" firstAttribute="top" secondItem="NCn-lQ-c7D" secondAttribute="top" id="V9o-Lb-54I"/>
+                            <constraint firstItem="4qJ-W8-aje" firstAttribute="trailing" secondItem="rXt-K7-AQj" secondAttribute="trailing" id="cCK-uM-enq"/>
+                            <constraint firstItem="4qJ-W8-aje" firstAttribute="leading" secondItem="rXt-K7-AQj" secondAttribute="leading" id="x0e-sL-EM7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rXt-K7-AQj"/>
+                    </view>
+                    <connections>
+                        <outlet property="trabajoPWeb" destination="4qJ-W8-aje" id="TL3-I7-XXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEi-JN-paQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775.20000000000005" y="806.44677661169419"/>
+        </scene>
+        <!--Examen Gral-->
+        <scene sceneID="DTc-2p-B23">
+            <objects>
+                <viewController id="VWn-G7-o5s" customClass="examenGral" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OyY-f5-st3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-p8-7Eh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2P5-p8-7Eh" firstAttribute="trailing" secondItem="Yim-v3-wlF" secondAttribute="trailing" id="KxT-m9-rRP"/>
+                            <constraint firstItem="2P5-p8-7Eh" firstAttribute="top" secondItem="OyY-f5-st3" secondAttribute="top" id="b6H-ml-AIo"/>
+                            <constraint firstItem="2P5-p8-7Eh" firstAttribute="leading" secondItem="Yim-v3-wlF" secondAttribute="leading" id="hic-Pf-xzw"/>
+                            <constraint firstItem="2P5-p8-7Eh" firstAttribute="bottom" secondItem="Yim-v3-wlF" secondAttribute="bottom" id="zkM-oM-lBl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yim-v3-wlF"/>
+                    </view>
+                    <connections>
+                        <outlet property="examenWeb" destination="2P5-p8-7Eh" id="bEe-fs-ghP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeE-e4-nAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="805.54722638680664"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ggm-C2-ih4">
+            <objects>
+                <viewController id="EiY-uL-ec3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XEJ-uP-2ox">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myhivd8.png" translatesAutoresizingMaskIntoConstraints="NO" id="BCL-se-9bZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjL-1M-TF8">
+                                <rect key="frame" x="24" y="349" width="350" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Desarrolladores:                                  Alcantar Mateos Luis Arturo                                                Guerrero Gonzalez Edson Aldair       Mellado García Jorge Ivan                              Muro Lezama Abraham </string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Optima-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-acatlan.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vbn-Ke-e8M">
+                                <rect key="frame" x="20" y="98" width="124" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swift.png" translatesAutoresizingMaskIntoConstraints="NO" id="9IK-AX-wfZ">
+                                <rect key="frame" x="279" y="98" width="124" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OMEGA.png" translatesAutoresizingMaskIntoConstraints="NO" id="11L-yH-m6F">
+                                <rect key="frame" x="20" y="745" width="147" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CQV-BQ-4fl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMV-mW-g9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102.8985507246377" y="1665.4017857142856"/>
+        </scene>
+        <!--Festivales-->
+        <scene sceneID="wXh-cL-GqI">
+            <objects>
+                <viewController id="ynD-3P-ZB1" customClass="festivales" customModule="tramitesUniversitarios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nOz-Q1-tjR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Xf-zL-Pis">
+                                <rect key="frame" x="0.0" y="57" width="414" height="805"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Xf-zL-Pis" firstAttribute="leading" secondItem="9C4-AV-hGH" secondAttribute="leading" id="AaU-hG-vdu"/>
+                            <constraint firstItem="2Xf-zL-Pis" firstAttribute="trailing" secondItem="9C4-AV-hGH" secondAttribute="trailing" id="lEH-vT-oLk"/>
+                            <constraint firstItem="2Xf-zL-Pis" firstAttribute="top" secondItem="9C4-AV-hGH" secondAttribute="top" id="qnK-l2-L8q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9C4-AV-hGH"/>
+                    </view>
+                    <connections>
+                        <outlet property="festivalesWeb" destination="2Xf-zL-Pis" id="8H6-Qi-ICA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bj-eU-SXJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3502.898550724638" y="-563.16964285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cultura.png" width="1822" height="420"/>
+        <image name="OMEGA.png" width="1000" height="1000"/>
+        <image name="UNAM.jpg" width="1242" height="415"/>
+        <image name="blue.jpg" width="2560" height="1600"/>
+        <image name="culturaUNAM.png" width="750" height="480"/>
+        <image name="lines.png" width="1422" height="798"/>
+        <image name="logo-acatlan.png" width="1000" height="1102"/>
+        <image name="myhivd8.png" width="744" height="1392"/>
+        <image name="swift.png" width="512" height="512"/>
+    </resources>
+</document>

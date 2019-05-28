@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		627C0D9822978DF3002AAC90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0D9722978DF3002AAC90 /* AppDelegate.swift */; };
+		627C0D9A22978DF3002AAC90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0D9922978DF3002AAC90 /* ViewController.swift */; };
+		627C0D9D22978DF3002AAC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627C0D9B22978DF3002AAC90 /* Main.storyboard */; };
+		627C0D9F22978DF6002AAC90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627C0D9E22978DF6002AAC90 /* Assets.xcassets */; };
+		627C0DA222978DF6002AAC90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627C0DA022978DF6002AAC90 /* LaunchScreen.storyboard */; };
+		627C0DAA229793A6002AAC90 /* cambioCarrera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DA9229793A6002AAC90 /* cambioCarrera.swift */; };
+		627C0DAC229794D4002AAC90 /* cambioInterno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DAB229794D4002AAC90 /* cambioInterno.swift */; };
+		627C0DAE229795B6002AAC90 /* cambioPlantel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DAD229795B6002AAC90 /* cambioPlantel.swift */; };
+		627C0DB022979689002AAC90 /* carreraSimultanea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DAF22979689002AAC90 /* carreraSimultanea.swift */; };
+		627C0DB2229796AB002AAC90 /* certificadoEstudios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DB1229796AB002AAC90 /* certificadoEstudios.swift */; };
+		627C0DB4229796BF002AAC90 /* constanciaEstudios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DB3229796BF002AAC90 /* constanciaEstudios.swift */; };
+		627C0DB6229796E5002AAC90 /* constanciaCreditos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DB5229796E5002AAC90 /* constanciaCreditos.swift */; };
+		627C0DB8229796F8002AAC90 /* reposicionCredencial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DB7229796F8002AAC90 /* reposicionCredencial.swift */; };
+		627C0DBA22979707002AAC90 /* segundaCarrerra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DB922979707002AAC90 /* segundaCarrerra.swift */; };
+		627C0DBC22979713002AAC90 /* suspencionTemporal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DBB22979713002AAC90 /* suspencionTemporal.swift */; };
+		627C0DBE2297A0F5002AAC90 /* actividadInvestigacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DBD2297A0F5002AAC90 /* actividadInvestigacion.swift */; };
+		627C0DC02297A102002AAC90 /* apoyoDocencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DBF2297A102002AAC90 /* apoyoDocencia.swift */; };
+		627C0DC22297A110002AAC90 /* estudiosPosgrado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DC12297A110002AAC90 /* estudiosPosgrado.swift */; };
+		627C0DC42297A122002AAC90 /* examenGral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DC32297A122002AAC90 /* examenGral.swift */; };
+		627C0DC62297A130002AAC90 /* trabajoProfesional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627C0DC52297A130002AAC90 /* trabajoProfesional.swift */; };
+		627C0DCC2297AD44002AAC90 /* myhivd8.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C0DCB2297AD44002AAC90 /* myhivd8.png */; };
+		627C0DCE2297AD97002AAC90 /* logo-acatlan.png in Resources */ = {isa = PBXBuildFile; fileRef = 627C0DCD2297AD97002AAC90 /* logo-acatlan.png */; };
+		7D10EFDB22985F9600A4309D /* blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D10EFDA22985F9600A4309D /* blue.jpg */; };
+		7D10EFDD229864DB00A4309D /* lines.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D10EFDC229864DB00A4309D /* lines.png */; };
+		7D10EFE12298769600A4309D /* Cultura.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D10EFE02298769600A4309D /* Cultura.png */; };
+		7D10EFE32298785900A4309D /* culturaUNAM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D10EFE22298785900A4309D /* culturaUNAM.png */; };
+		7D10EFE5229879DA00A4309D /* cartelera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D10EFE4229879DA00A4309D /* cartelera.swift */; };
+		7D10EFE7229879E900A4309D /* festivales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D10EFE6229879E900A4309D /* festivales.swift */; };
+		7D190D122298513B00DEA062 /* UNAM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D190D112298513B00DEA062 /* UNAM.jpg */; };
+		7D190D15229859C800DEA062 /* OMEGA.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D190D13229859C800DEA062 /* OMEGA.png */; };
+		7D190D1822985A1E00DEA062 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D190D1722985A1E00DEA062 /* swift.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		627C0D9422978DF3002AAC90 /* tramitesUniversitarios1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tramitesUniversitarios1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		627C0D9722978DF3002AAC90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		627C0D9922978DF3002AAC90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		627C0D9C22978DF3002AAC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		627C0D9E22978DF6002AAC90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		627C0DA122978DF6002AAC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		627C0DA322978DF6002AAC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627C0DA9229793A6002AAC90 /* cambioCarrera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cambioCarrera.swift; sourceTree = "<group>"; };
+		627C0DAB229794D4002AAC90 /* cambioInterno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cambioInterno.swift; sourceTree = "<group>"; };
+		627C0DAD229795B6002AAC90 /* cambioPlantel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cambioPlantel.swift; sourceTree = "<group>"; };
+		627C0DAF22979689002AAC90 /* carreraSimultanea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carreraSimultanea.swift; sourceTree = "<group>"; };
+		627C0DB1229796AB002AAC90 /* certificadoEstudios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = certificadoEstudios.swift; sourceTree = "<group>"; };
+		627C0DB3229796BF002AAC90 /* constanciaEstudios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constanciaEstudios.swift; sourceTree = "<group>"; };
+		627C0DB5229796E5002AAC90 /* constanciaCreditos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constanciaCreditos.swift; sourceTree = "<group>"; };
+		627C0DB7229796F8002AAC90 /* reposicionCredencial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reposicionCredencial.swift; sourceTree = "<group>"; };
+		627C0DB922979707002AAC90 /* segundaCarrerra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segundaCarrerra.swift; sourceTree = "<group>"; };
+		627C0DBB22979713002AAC90 /* suspencionTemporal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suspencionTemporal.swift; sourceTree = "<group>"; };
+		627C0DBD2297A0F5002AAC90 /* actividadInvestigacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actividadInvestigacion.swift; sourceTree = "<group>"; };
+		627C0DBF2297A102002AAC90 /* apoyoDocencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apoyoDocencia.swift; sourceTree = "<group>"; };
+		627C0DC12297A110002AAC90 /* estudiosPosgrado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estudiosPosgrado.swift; sourceTree = "<group>"; };
+		627C0DC32297A122002AAC90 /* examenGral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examenGral.swift; sourceTree = "<group>"; };
+		627C0DC52297A130002AAC90 /* trabajoProfesional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trabajoProfesional.swift; sourceTree = "<group>"; };
+		627C0DCB2297AD44002AAC90 /* myhivd8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myhivd8.png; sourceTree = "<group>"; };
+		627C0DCD2297AD97002AAC90 /* logo-acatlan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-acatlan.png"; sourceTree = "<group>"; };
+		7D10EFDA22985F9600A4309D /* blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue.jpg; sourceTree = "<group>"; };
+		7D10EFDC229864DB00A4309D /* lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lines.png; sourceTree = "<group>"; };
+		7D10EFE02298769600A4309D /* Cultura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cultura.png; sourceTree = "<group>"; };
+		7D10EFE22298785900A4309D /* culturaUNAM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = culturaUNAM.png; sourceTree = "<group>"; };
+		7D10EFE4229879DA00A4309D /* cartelera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartelera.swift; sourceTree = "<group>"; };
+		7D10EFE6229879E900A4309D /* festivales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = festivales.swift; sourceTree = "<group>"; };
+		7D190D112298513B00DEA062 /* UNAM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UNAM.jpg; sourceTree = "<group>"; };
+		7D190D13229859C800DEA062 /* OMEGA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OMEGA.png; sourceTree = "<group>"; };
+		7D190D1722985A1E00DEA062 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		627C0D9122978DF3002AAC90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		627C0D8B22978DF3002AAC90 = {
+			isa = PBXGroup;
+			children = (
+				627C0D9622978DF3002AAC90 /* tramitesUniversitarios1 */,
+				627C0D9522978DF3002AAC90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		627C0D9522978DF3002AAC90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627C0D9422978DF3002AAC90 /* tramitesUniversitarios1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		627C0D9622978DF3002AAC90 /* tramitesUniversitarios1 */ = {
+			isa = PBXGroup;
+			children = (
+				7D10EFE4229879DA00A4309D /* cartelera.swift */,
+				7D10EFE6229879E900A4309D /* festivales.swift */,
+				627C0DAF22979689002AAC90 /* carreraSimultanea.swift */,
+				627C0D9722978DF3002AAC90 /* AppDelegate.swift */,
+				627C0D9922978DF3002AAC90 /* ViewController.swift */,
+				627C0D9B22978DF3002AAC90 /* Main.storyboard */,
+				627C0DBD2297A0F5002AAC90 /* actividadInvestigacion.swift */,
+				627C0DBF2297A102002AAC90 /* apoyoDocencia.swift */,
+				627C0DC12297A110002AAC90 /* estudiosPosgrado.swift */,
+				627C0DC32297A122002AAC90 /* examenGral.swift */,
+				627C0DC52297A130002AAC90 /* trabajoProfesional.swift */,
+				627C0DB922979707002AAC90 /* segundaCarrerra.swift */,
+				627C0DBB22979713002AAC90 /* suspencionTemporal.swift */,
+				627C0DB7229796F8002AAC90 /* reposicionCredencial.swift */,
+				627C0DB5229796E5002AAC90 /* constanciaCreditos.swift */,
+				627C0DB3229796BF002AAC90 /* constanciaEstudios.swift */,
+				627C0DB1229796AB002AAC90 /* certificadoEstudios.swift */,
+				627C0DAD229795B6002AAC90 /* cambioPlantel.swift */,
+				627C0DAB229794D4002AAC90 /* cambioInterno.swift */,
+				627C0DA9229793A6002AAC90 /* cambioCarrera.swift */,
+				627C0D9E22978DF6002AAC90 /* Assets.xcassets */,
+				627C0DA022978DF6002AAC90 /* LaunchScreen.storyboard */,
+				627C0DA322978DF6002AAC90 /* Info.plist */,
+				7D10EFE02298769600A4309D /* Cultura.png */,
+				7D190D13229859C800DEA062 /* OMEGA.png */,
+				7D190D1722985A1E00DEA062 /* swift.png */,
+				7D10EFE22298785900A4309D /* culturaUNAM.png */,
+				7D10EFDA22985F9600A4309D /* blue.jpg */,
+				7D190D112298513B00DEA062 /* UNAM.jpg */,
+				7D10EFDC229864DB00A4309D /* lines.png */,
+				627C0DCB2297AD44002AAC90 /* myhivd8.png */,
+				627C0DCD2297AD97002AAC90 /* logo-acatlan.png */,
+			);
+			path = tramitesUniversitarios1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		627C0D9322978DF3002AAC90 /* tramitesUniversitarios1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627C0DA622978DF6002AAC90 /* Build configuration list for PBXNativeTarget "tramitesUniversitarios1" */;
+			buildPhases = (
+				627C0D9022978DF3002AAC90 /* Sources */,
+				627C0D9122978DF3002AAC90 /* Frameworks */,
+				627C0D9222978DF3002AAC90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tramitesUniversitarios1;
+			productName = tramitesUniversitarios1;
+			productReference = 627C0D9422978DF3002AAC90 /* tramitesUniversitarios1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		627C0D8C22978DF3002AAC90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Abraham Muro";
+				TargetAttributes = {
+					627C0D9322978DF3002AAC90 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 627C0D8F22978DF3002AAC90 /* Build configuration list for PBXProject "tramitesUniversitarios1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 627C0D8B22978DF3002AAC90;
+			productRefGroup = 627C0D9522978DF3002AAC90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				627C0D9322978DF3002AAC90 /* tramitesUniversitarios1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		627C0D9222978DF3002AAC90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D190D15229859C800DEA062 /* OMEGA.png in Resources */,
+				7D10EFE12298769600A4309D /* Cultura.png in Resources */,
+				7D190D1822985A1E00DEA062 /* swift.png in Resources */,
+				7D10EFE32298785900A4309D /* culturaUNAM.png in Resources */,
+				627C0DA222978DF6002AAC90 /* LaunchScreen.storyboard in Resources */,
+				627C0D9F22978DF6002AAC90 /* Assets.xcassets in Resources */,
+				7D10EFDB22985F9600A4309D /* blue.jpg in Resources */,
+				7D190D122298513B00DEA062 /* UNAM.jpg in Resources */,
+				627C0DCE2297AD97002AAC90 /* logo-acatlan.png in Resources */,
+				7D10EFDD229864DB00A4309D /* lines.png in Resources */,
+				627C0DCC2297AD44002AAC90 /* myhivd8.png in Resources */,
+				627C0D9D22978DF3002AAC90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627C0D9022978DF3002AAC90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627C0DB8229796F8002AAC90 /* reposicionCredencial.swift in Sources */,
+				627C0DAC229794D4002AAC90 /* cambioInterno.swift in Sources */,
+				627C0DC62297A130002AAC90 /* trabajoProfesional.swift in Sources */,
+				627C0DBA22979707002AAC90 /* segundaCarrerra.swift in Sources */,
+				7D10EFE7229879E900A4309D /* festivales.swift in Sources */,
+				627C0D9A22978DF3002AAC90 /* ViewController.swift in Sources */,
+				627C0DC22297A110002AAC90 /* estudiosPosgrado.swift in Sources */,
+				627C0DAE229795B6002AAC90 /* cambioPlantel.swift in Sources */,
+				7D10EFE5229879DA00A4309D /* cartelera.swift in Sources */,
+				627C0DB2229796AB002AAC90 /* certificadoEstudios.swift in Sources */,
+				627C0DC02297A102002AAC90 /* apoyoDocencia.swift in Sources */,
+				627C0DBE2297A0F5002AAC90 /* actividadInvestigacion.swift in Sources */,
+				627C0DAA229793A6002AAC90 /* cambioCarrera.swift in Sources */,
+				627C0D9822978DF3002AAC90 /* AppDelegate.swift in Sources */,
+				627C0DB4229796BF002AAC90 /* constanciaEstudios.swift in Sources */,
+				627C0DB6229796E5002AAC90 /* constanciaCreditos.swift in Sources */,
+				627C0DBC22979713002AAC90 /* suspencionTemporal.swift in Sources */,
+				627C0DB022979689002AAC90 /* carreraSimultanea.swift in Sources */,
+				627C0DC42297A122002AAC90 /* examenGral.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		627C0D9B22978DF3002AAC90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				627C0D9C22978DF3002AAC90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		627C0DA022978DF6002AAC90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				627C0DA122978DF6002AAC90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		627C0DA422978DF6002AAC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		627C0DA522978DF6002AAC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		627C0DA722978DF6002AAC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KT88RMJP7W;
+				INFOPLIST_FILE = tramitesUniversitarios1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pgrmmng-II.tramitesUniversitarios1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		627C0DA822978DF6002AAC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KT88RMJP7W;
+				INFOPLIST_FILE = tramitesUniversitarios1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pgrmmng-II.tramitesUniversitarios1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		627C0D8F22978DF3002AAC90 /* Build configuration list for PBXProject "tramitesUniversitarios1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627C0DA422978DF6002AAC90 /* Debug */,
+				627C0DA522978DF6002AAC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627C0DA622978DF6002AAC90 /* Build configuration list for PBXNativeTarget "tramitesUniversitarios1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627C0DA722978DF6002AAC90 /* Debug */,
+				627C0DA822978DF6002AAC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 627C0D8C22978DF3002AAC90 /* Project object */;
+}
